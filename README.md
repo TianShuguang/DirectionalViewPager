@@ -10,8 +10,8 @@
 具体项目介绍，可移步：[Android-DirectionalViewPager](https://github.com/JakeWharton/Android-DirectionalViewPager)
 
 ### 改动的地方  
-    
-     import android.database.DataSetObserver;//Java
+    ```Java
+     import android.database.DataSetObserver;
     
     private class PagerDataSetObserver extends DataSetObserver {
 
@@ -51,4 +51,5 @@
                 populate();
             }
         }
-    }//Java
+    }
+    ```
