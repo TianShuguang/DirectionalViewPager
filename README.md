@@ -5,13 +5,13 @@
   当使用Jake Whartons 的 [Android-DirectionalViewPager](https://github.com/JakeWharton/Android-DirectionalViewPager)的时候，会遇到会提示 ClassNotFound，找不到这个DataSetObserver类，
   是因为DataSetObserver 已经在 /frameworks/base/core/java/android/database/DataSetObserver.java 定义了 
 
-    本例子中重新修改了代码，可正常运行。
+  本例子中重新修改了代码，可正常运行。
 
 具体项目介绍，可移步：[Android-DirectionalViewPager](https://github.com/JakeWharton/Android-DirectionalViewPager)
 
 ### 改动的地方  
     
-    import android.database.DataSetObserver;
+     import android.database.DataSetObserver;//Java
     
     private class PagerDataSetObserver extends DataSetObserver {
 
@@ -24,9 +24,9 @@
         public void onInvalidated() {
             dataSetChanged();
         }
-    }
+    }//Java
     
-    private PagerDataSetObserver mObserver;
+    private PagerDataSetObserver mObserver;//Java
 
   public void setAdapter(PagerAdapter adapter) {
         if (mAdapter != null) {
@@ -51,4 +51,4 @@
                 populate();
             }
         }
-    }
+    }//Java
