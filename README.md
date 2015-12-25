@@ -11,7 +11,7 @@
 
 ### 改动的地方  
  ```Java
-     import android.database.DataSetObserver;
+    import android.database.DataSetObserver;
 ```
 ```Java
     private class PagerDataSetObserver extends DataSetObserver {
@@ -32,7 +32,7 @@
  ```
     
 ```Java
-  public void setAdapter(PagerAdapter adapter) {
+    public void setAdapter(PagerAdapter adapter) {
         if (mAdapter != null) {
             mAdapter.unregisterDataSetObserver(mObserver);
         }
