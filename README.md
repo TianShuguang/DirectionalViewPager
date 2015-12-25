@@ -12,7 +12,8 @@
 ### 改动的地方  
     ```Java
      import android.database.DataSetObserver;
-    
+    ```
+    ```Java
     private class PagerDataSetObserver extends DataSetObserver {
 
         @Override
@@ -24,10 +25,13 @@
         public void onInvalidated() {
             dataSetChanged();
         }
-    }//Java
+    }
+    ```
+    ```Java
+    private PagerDataSetObserver mObserver;
+    ```
     
-    private PagerDataSetObserver mObserver;//Java
-
+```Java
   public void setAdapter(PagerAdapter adapter) {
         if (mAdapter != null) {
             mAdapter.unregisterDataSetObserver(mObserver);
@@ -52,4 +56,4 @@
             }
         }
     }
-    ```
+```
